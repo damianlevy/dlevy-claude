@@ -1,0 +1,16 @@
+{
+  "name": "metodo-1a",
+  "version": "1.0.0",
+  "description": "Metodo de investigacion multi-agente con equipos ciegos y adversariales, e interfaz de decision por HTML con semaforo. Agnostico de proyecto.",
+  "author": {
+    "name": "Damian Levy"
+  },
+  "keywords": [
+    "investigacion",
+    "multi-agente",
+    "adversarial",
+    "toma-de-decisiones",
+    "auditoria"
+  ],
+  "license": "MIT"
+}

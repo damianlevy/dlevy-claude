@@ -1,0 +1,17 @@
+{
+  "name": "dlevy",
+  "owner": {
+    "name": "Damian Levy"
+  },
+  "metadata": {
+    "description": "Metodos de trabajo con agentes: investigacion multi-agente adversarial y toma de decisiones asistida.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "metodo-1a",
+      "source": "./plugins/metodo-1a",
+      "description": "Loop de investigacion compleja con equipos ciegos y adversariales, mas el metodo canonico de decisiones por HTML con semaforo."
+    }
+  ]
+}
