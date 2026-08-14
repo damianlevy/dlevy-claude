@@ -154,6 +154,7 @@ Si hay Node disponible, simular un voto y una recolección de forma automatizada
 - **Un solo archivo HTML autosuficiente**, sin dependencias de internet: si no hay conexión, igual funciona.
 - Legible y sobrio: título claro, bloque de introducción que diga qué es y cómo se vota, bloques bien separados con su color, tipografía del sistema.
 - **Encabezado con identidad estable**: nombre del trabajo, número de versión, fecha y hora, y de qué ronda o proceso proviene. Sin esto, dos versiones del mismo documento son indistinguibles a los tres meses.
+- **Sesión generadora SIEMPRE identificada** (regla del dueño, 14-08-2026): debajo del título principal, una línea que diga QUÉ SESIÓN generó el HTML (por ejemplo: «Generado por: coordinadora dc+ (Air) — sesión Matriz Productos», o el nombre de la ronda/terminal). Sin esto, con varias sesiones activas es confuso saber a quién responder ni dónde pegar las respuestas.
 - Español correcto con tildes: es texto para leer, no código.
 - Códigos de bloque siempre visibles.
 - Guardar donde la persona lo encuentre (por ejemplo, el Escritorio) con nombre claro: `DECISIONES-<trabajo>-<version>-<fecha>.html`, y abrirlo en el navegador.

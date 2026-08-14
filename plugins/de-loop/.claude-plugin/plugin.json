@@ -1,6 +1,6 @@
 {
   "name": "de-loop",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Metodo de investigacion multi-agente con equipos ciegos y adversariales, e interfaz de decision por HTML con semaforo. Agnostico de proyecto.",
   "author": {
     "name": "Damian Levy"
