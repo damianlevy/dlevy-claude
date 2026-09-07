@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.1 — 2026-09-07
+
+- Alcance y Efectos: salvaguarda efectiva de solo lectura (laudo DEC-11). El
+  pooler de Supabase ignora `default_transaction_read_only` enviado por
+  `PGOPTIONS`; toda consulta de una ronda de solo lectura se envuelve de forma
+  explícita en `BEGIN READ ONLY; ... ROLLBACK;`. Prohibido el canario de
+  escritura para comprobarla.
+
 ## 1.2.0 — 2026-09-07
 
 - Protocolo v8 en `skills/loop-investigacion`.

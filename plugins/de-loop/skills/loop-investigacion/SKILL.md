@@ -482,6 +482,14 @@ publicar o sincronizar codigo, escribir o alterar bases de datos y sus
 banderas de configuracion (las consultas de lectura si), enviar correos,
 mensajes o cualquier comunicacion, y modificar configuracion o credenciales.
 
+Salvaguarda efectiva de solo lectura (laudo DEC-11). El pooler de Supabase
+ignora default_transaction_read_only enviado por PGOPTIONS: esa variable no
+protege, y una sesion declarada de solo lectura por esa via puede escribir.
+Toda consulta de una ronda de solo lectura se envuelve de forma explicita en
+BEGIN READ ONLY; ... ROLLBACK;. Comprobar la salvaguarda con un canario de
+escritura es en si una escritura y esta prohibido: si se quiere verificar, el
+CREATE va adentro de un BEGIN READ ONLY, donde falla sin efecto.
+
 Lista blanca de escritura. Lo unico que la ronda escribe es su carpeta de
 ronda. Todo el resto del sistema de archivos es lectura. Se define por lista
 blanca y no por lista de carpetas prohibidas: no hace falta enumerar que esta

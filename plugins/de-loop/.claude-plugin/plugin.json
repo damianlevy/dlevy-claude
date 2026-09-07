@@ -1,6 +1,6 @@
 {
   "name": "de-loop",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Metodo de investigacion multi-agente con equipos ciegos y adversariales, hooks de verificacion determinista (H1-H5) e interfaz de decision por HTML con semaforo. Agnostico de proyecto.",
   "author": {
     "name": "Damian Levy"

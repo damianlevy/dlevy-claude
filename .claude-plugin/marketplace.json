@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Metodos de trabajo con agentes: investigacion multi-agente adversarial con verificacion determinista por hooks, y toma de decisiones asistida.",
-    "version": "1.2.0"
+    "version": "1.2.1"
   },
   "plugins": [
     {
