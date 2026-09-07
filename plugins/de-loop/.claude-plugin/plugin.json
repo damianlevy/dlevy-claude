@@ -1,7 +1,7 @@
 {
   "name": "de-loop",
-  "version": "1.1.1",
-  "description": "Metodo de investigacion multi-agente con equipos ciegos y adversariales, e interfaz de decision por HTML con semaforo. Agnostico de proyecto.",
+  "version": "1.2.0",
+  "description": "Metodo de investigacion multi-agente con equipos ciegos y adversariales, hooks de verificacion determinista (H1-H5) e interfaz de decision por HTML con semaforo. Agnostico de proyecto.",
   "author": {
     "name": "Damian Levy"
   },
@@ -10,7 +10,9 @@
     "multi-agente",
     "adversarial",
     "toma-de-decisiones",
-    "auditoria"
+    "auditoria",
+    "hooks",
+    "verificacion"
   ],
   "license": "MIT"
 }
