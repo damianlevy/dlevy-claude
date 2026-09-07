@@ -24,6 +24,16 @@ la ronda completa, con `control/hooks.log`, es el paquete de auditoría.
 El loop entrega por el HTML. El HTML sirve para cerrar cualquier trabajo,
 venga o no de una ronda.
 
+## Tres piezas, un método
+
+- **`loop-investigacion`** — investigar: equipos ciegos y adversariales, arbitraje, hooks H1–H5.
+- **`coordinacion-desarrollo`** — construir: una sola dueña de producción, sub-coordinadoras
+  radiales, sub-rondas en worktrees, PR sin merge, SQL ensayado, flags apagados, hooks D1–D5.
+- **`decisiones-html`** — decidir: el HTML canónico por el que el 1A vota, común a los dos.
+
+Comandos: `/ronda` (lanza una ronda de investigación), `/subronda` (prepara una sub-ronda de
+desarrollo), `/decisiones` (arma el HTML de decisiones).
+
 ## Instalación
 
 **Como skills personales** (una máquina):

@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.3.0 — 2026-09-07
+
+- Skill nuevo `coordinacion-desarrollo`: protocolo de desarrollo multi-sesión (coordinadora general
+  única dueña de producción, sub-coordinadoras en modelo radial, sub-rondas en worktrees aislados,
+  PR sin merge, SQL ensayado con BEGIN/ROLLBACK, flags que nacen apagados, cola de merges con un
+  deploy verificado por merge, validación adversarial total en tres anillos, libro de laudos, ledger
+  de compromisos, libro de auditorías, cierre por `outputs/CIERRE.flag`). Agnóstico de proyecto.
+- Comando `/subronda`: prepara la carpeta canónica y el prompt de arranque de una sub-ronda y corre D1.
+- Hooks D1–D5 en `hooks-dev/` (arranque limpio, SQL ensayado, flags apagados, PR sin merge y sin
+  fuerza, cierre íntegro), con runner `verify-dev.sh` y `test-dev.sh` (12 casos).
+- El plugin pasa a tener tres skills: `loop-investigacion` (investigar), `coordinacion-desarrollo`
+  (construir) y `decisiones-html` (decidir), que es el puente entre los dos.
+
 ## 1.2.1 — 2026-09-07
 
 - Alcance y Efectos: salvaguarda efectiva de solo lectura (laudo DEC-11). El
