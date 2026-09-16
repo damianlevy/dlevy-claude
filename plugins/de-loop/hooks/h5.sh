@@ -17,8 +17,9 @@ for f in $fichas; do
 done
 html=$(find "$RONDA/70-entrega" -type f -name '*.html' 2>/dev/null | head -1)
 if [ -z "$html" ]; then fallo "70-entrega no tiene HTML"; else
+  plano=$(perl -CSD -pe 'tr/\x{e1}\x{e9}\x{ed}\x{f3}\x{fa}\x{c1}\x{c9}\x{cd}\x{d3}\x{da}\x{f1}\x{d1}/aeiouAEIOUnN/' "$html" 2>/dev/null || cat "$html")   # 1.3.1: tildes no cuentan
   for s in "DECISIONES" "SUPUESTOS DE ENCUADRE" "RESULTADO" "DISENSO RESIDUAL" "RECORRIDO" "ENTREGABLES" "CONTROL DE EJECUCION" "PAQUETE DE AUDITORIA"; do
-    grep -qi "$s" "$html" || fallo "HTML sin seccion: $s"; done
+    echo "$plano" | grep -qi "$s" || fallo "HTML sin seccion: $s"; done
   if [ -f "$CONTROL/hooks.log" ] && grep -qE 'PENDIENTE|FALLADO' "$CONTROL/hooks.log"; then
     verdes=$(grep -oiE 'class="[^"]*verde[^"]*"|data-semaforo="verde"' "$html" | wc -l | tr -d ' ')
     [ "$verdes" -eq 0 ] || fallo "hooks.log tiene controles pendientes o fallados y el HTML tiene $verdes items en VERDE"
