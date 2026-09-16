@@ -8,6 +8,8 @@
 #             fase7   -> H5
 HOOKS="$(cd "$(dirname "$0")" && pwd)"
 RONDA="${1:?uso: verify.sh <ronda> <momento> [archivos]}"; MOMENTO="${2:?momento}"; shift 2
+[ -d "$RONDA" ] || { echo "ERROR: no existe la carpeta de ronda: $RONDA (relativa al cwd $(pwd))"; exit 2; }
+RONDA="$(cd "$RONDA" && pwd)"   # 1.3.1: absoluta
 LOG="$RONDA/control/hooks.log"; mkdir -p "$RONDA/control"
 run() { local nombre="$1"; shift
   { echo "=== $(date '+%Y-%m-%d %H:%M:%S') $MOMENTO $nombre"; "$@"; rc=$?; echo "=== exit $rc"; exit $rc; } 2>&1 | tee -a "$LOG"

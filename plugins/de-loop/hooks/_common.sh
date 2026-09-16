@@ -3,6 +3,7 @@
 set -u
 RONDA="${1:?uso: $0 <carpeta-de-ronda> [...]}"
 [ -d "$RONDA" ] || { echo "ERROR: no existe la carpeta de ronda: $RONDA"; exit 2; }
+RONDA="$(cd "$RONDA" && pwd)"   # 1.3.1: absoluta, asi los hooks no dependen del cwd del que los invoca
 CONTROL="$RONDA/control"; mkdir -p "$CONTROL"
 CLASES='NORMA|DATO|INFERENCIA|SUPUESTO|RESTRICCION'
 FALLOS=0

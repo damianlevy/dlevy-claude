@@ -5,7 +5,7 @@
 # en el campo D de la ficha normalizada (00-encuadre/*.md, lineas que empiezan con "Dn").
 source "$(dirname "$0")/_common.sh"
 shift; [ $# -ge 1 ] || { echo "uso: h4.sh <ronda> <archivo> [...]"; exit 2; }
-DECLARADAS=$(cat "$RONDA"/00-encuadre/*.md 2>/dev/null | grep -oE '^[[:space:]]*(- |\* )?D[0-9]+' | grep -oE 'D[0-9]+' | sort -u)
+DECLARADAS=$(cat "$RONDA"/00-encuadre/*.md 2>/dev/null | grep -oE '^[[:space:]]*(- |\* )?D[0-9]+[a-z]?' | grep -oE 'D[0-9]+[a-z]?' | sort -u)   # 1.3.1: admite sufijo de letra (D6a, D9e)
 [ -n "$DECLARADAS" ] || { fallo "la ficha de 00-encuadre no declara ningun insumo con id Dn"; cierre H4; }
 ok "insumos declarados en campo D: $(echo $DECLARADAS | tr '\n' ' ')"
 for f in "$@"; do
@@ -15,9 +15,9 @@ for f in "$@"; do
     n=$((n+1))
     while IFS= read -r tag; do
       [ -z "$tag" ] && continue
-      id=$(echo "$tag" | grep -oE '\bD[0-9]+\b' | head -1)
+      id=$(echo "$tag" | grep -oE '\bD[0-9]+[a-z]?\b' | head -1); base=$(echo "$id" | grep -oE '^D[0-9]+')
       if [ -z "$id" ]; then fallo "$(basename "$f"):$n cita sin id de fuente: $tag"
-      elif ! echo "$DECLARADAS" | grep -qx "$id"; then fallo "$(basename "$f"):$n cita $id, que no esta en el campo D"; fi
+      elif ! echo "$DECLARADAS" | grep -qxE "$id|$base"; then fallo "$(basename "$f"):$n cita $id, que no esta en el campo D"; fi
     done < <(echo "$linea" | grep -oE '\[(DATO|NORMA)[^]]*\]')
   done < "$f"
 done
