@@ -1,0 +1,8 @@
+{
+  "name": "dl",
+  "version": "1.0.0",
+  "description": "dl:loop - protocolo de investigacion profunda y comunicacion de decisiones. Reemplaza a loop-investigacion (dc:loop) de de-loop.",
+  "author": { "name": "Damian Levy" },
+  "keywords": ["investigacion", "adversarial", "multi-agente", "toma-de-decisiones"],
+  "license": "MIT"
+}

@@ -5,13 +5,18 @@
   },
   "metadata": {
     "description": "Metodos de trabajo con agentes: investigacion multi-agente adversarial con verificacion determinista por hooks, y toma de decisiones asistida.",
-    "version": "1.3.1"
+    "version": "1.4.0"
   },
   "plugins": [
     {
       "name": "de-loop",
       "source": "./plugins/de-loop",
       "description": "Loop de investigacion compleja con equipos ciegos y adversariales, hooks H1-H5 como codigo, mas el metodo canonico de decisiones por HTML con semaforo."
+    },
+    {
+      "name": "dl",
+      "source": "./plugins/dl",
+      "description": "dl:loop - protocolo de investigacion profunda y comunicacion de decisiones."
     }
   ]
 }
