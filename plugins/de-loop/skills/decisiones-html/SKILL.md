@@ -1,6 +1,6 @@
 ---
 name: decisiones-html
-description: "Genera un documento HTML autosuficiente de decisiones con semaforo, votacion por bloque y recoleccion de respuestas, para elevar decisiones al dueno del proyecto. Usar al cerrar cualquier trabajo, ronda de analisis o investigacion que tenga varias decisiones, hallazgos a confirmar u opciones de camino; cuando el usuario diga 'armame el HTML de decisiones', 'elevame esto para decidir', 'metodo canonico', 'documento de votacion'; y como entrega final de una ronda del skill loop-investigacion. No usar para una unica pregunta trivial: para eso alcanza el chat, con el mismo estandar de contenido."
+description: "Genera un documento HTML autosuficiente de decisiones con semaforo, votacion por bloque y recoleccion de respuestas, para elevar decisiones al dueno del proyecto. Usar al cerrar cualquier trabajo, ronda de analisis o investigacion que tenga varias decisiones, hallazgos a confirmar u opciones de camino; cuando el usuario diga 'armame el HTML de decisiones', 'elevame esto para decidir', 'metodo canonico', 'documento de votacion'; y como entrega final de una ronda de dl:loop. No usar para una unica pregunta trivial: para eso alcanza el chat, con el mismo estandar de contenido."
 ---
 
 # Método canónico de decisiones por HTML

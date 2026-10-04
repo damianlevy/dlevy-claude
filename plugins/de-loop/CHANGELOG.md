@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.5.0 — 2026-10-03
+
+- Se retiran los restos del loop viejo: `hooks/` (H1–H5) y `PROTOCOLO-v8.txt`.
+- La investigación profunda vive ahora en el plugin `dl` (`/dl:loop`). `de-loop` queda con
+  `coordinacion-desarrollo` (+ hooks D1–D5, `/subronda`) y `decisiones-html` (`/decisiones`).
+
+## 1.4.0 — 2026-10-03
+
+- Se retiran el skill `loop-investigacion` (dc:loop) y el comando `/ronda`, reemplazados por `dl:loop`.
+
 ## 1.3.0 — 2026-09-07
 
 - Skill nuevo `coordinacion-desarrollo`: protocolo de desarrollo multi-sesión (coordinadora general

@@ -4,14 +4,14 @@
     "name": "Damian Levy"
   },
   "metadata": {
-    "description": "Metodos de trabajo con agentes: investigacion multi-agente adversarial con verificacion determinista por hooks, y toma de decisiones asistida.",
-    "version": "1.4.0"
+    "description": "Metodos de trabajo con agentes: investigacion profunda y comunicacion de decisiones (dl:loop), coordinacion de desarrollo multi-sesion y toma de decisiones asistida.",
+    "version": "1.5.0"
   },
   "plugins": [
     {
       "name": "de-loop",
       "source": "./plugins/de-loop",
-      "description": "Loop de investigacion compleja con equipos ciegos y adversariales, hooks H1-H5 como codigo, mas el metodo canonico de decisiones por HTML con semaforo."
+      "description": "Coordinacion de desarrollo multi-sesion (hooks D1-D5) y metodo canonico de decisiones por HTML con semaforo."
     },
     {
       "name": "dl",

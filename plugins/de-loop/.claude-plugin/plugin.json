@@ -1,17 +1,15 @@
 {
   "name": "de-loop",
-  "version": "1.4.0",
-  "description": "Metodo de trabajo con agentes: investigacion multi-agente adversarial (loop-investigacion, hooks H1-H5), coordinacion de desarrollo multi-sesion (coordinacion-desarrollo, hooks D1-D5) y toma de decisiones por HTML con semaforo. Agnostico de proyecto.",
+  "version": "1.5.0",
+  "description": "Metodo de trabajo con agentes: coordinacion de desarrollo multi-sesion (coordinacion-desarrollo, hooks D1-D5) y toma de decisiones por HTML con semaforo (decisiones-html). La investigacion profunda vive en el plugin dl (dl:loop). Agnostico de proyecto.",
   "author": {
     "name": "Damian Levy"
   },
   "keywords": [
-    "adversarial",
     "auditoria",
     "coordinacion",
     "desarrollo",
     "hooks",
-    "investigacion",
     "multi-agente",
     "multi-sesion",
     "toma-de-decisiones",

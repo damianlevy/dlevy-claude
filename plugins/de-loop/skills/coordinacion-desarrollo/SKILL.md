@@ -1,13 +1,13 @@
 ---
 name: coordinacion-desarrollo
-description: "Protocolo de desarrollo de software con varias sesiones de agentes: una coordinadora general unica duena de produccion, sub-coordinadoras por tema en modelo radial, sesiones dedicadas (sub-rondas) en worktrees aislados que producen PRs sin merge y SQL ensayado, flags que nacen apagados, validacion adversarial total de lo que generan los agentes, decisiones del usuario por HTML canonico y libro de laudos, y cierre por artefacto explicito. Usar cuando el usuario diga 'lanzar sub-ronda', 'abrir sub-coordinadora', 'cola de merges', 'coordinacion de sesiones', 'protocolo de coordinadoras', o cuando haya que repartir trabajo de desarrollo entre varias sesiones sin perder control de produccion. No usar para investigacion o analisis: para eso esta loop-investigacion."
+description: "Protocolo de desarrollo de software con varias sesiones de agentes: una coordinadora general unica duena de produccion, sub-coordinadoras por tema en modelo radial, sesiones dedicadas (sub-rondas) en worktrees aislados que producen PRs sin merge y SQL ensayado, flags que nacen apagados, validacion adversarial total de lo que generan los agentes, decisiones del usuario por HTML canonico y libro de laudos, y cierre por artefacto explicito. Usar cuando el usuario diga 'lanzar sub-ronda', 'abrir sub-coordinadora', 'cola de merges', 'coordinacion de sesiones', 'protocolo de coordinadoras', o cuando haya que repartir trabajo de desarrollo entre varias sesiones sin perder control de produccion. No usar para investigacion o analisis: para eso esta dl:loop."
 ---
 
 # Coordinación de desarrollo multi-sesión (v1)
 
 Protocolo para que varias sesiones de agentes desarrollen software sobre un mismo repositorio y una misma producción sin pisarse y sin que nadie, salvo una, toque producción. Es agnóstico de proyecto: no supone nombres, rutas, herramientas de deploy ni base de datos. Lo específico de cada proyecto (comandos de build, gates de CI, cómo se aplican flags) va en un documento del repo que este protocolo cita y no reemplaza.
 
-Comparte con `loop-investigacion` el método de decisiones (`decisiones-html`), las clases de evidencia y la idea de que un control que se autoevalúa no es un control. Se diferencia en lo esencial: el loop es solo lectura y produce conocimiento; esto produce código, PRs y SQL, y por eso sus reglas son de escritura.
+Comparte con `dl:loop` el método de decisiones (`decisiones-html`), las clases de evidencia y la idea de que un control que se autoevalúa no es un control. Se diferencia en lo esencial: el loop es solo lectura y produce conocimiento; esto produce código, PRs y SQL, y por eso sus reglas son de escritura.
 
 ## 1. Roles
 
