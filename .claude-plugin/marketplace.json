@@ -5,18 +5,18 @@
   },
   "metadata": {
     "description": "Metodos de trabajo con agentes: investigacion profunda y comunicacion de decisiones (dl:loop), coordinacion de desarrollo multi-sesion y toma de decisiones asistida.",
-    "version": "1.5.0"
+    "version": "1.6.0"
   },
   "plugins": [
     {
       "name": "de-loop",
       "source": "./plugins/de-loop",
-      "description": "Coordinacion de desarrollo multi-sesion (hooks D1-D5) y metodo canonico de decisiones por HTML con semaforo."
+      "description": "DEPRECADO: su contenido vive en el plugin dl desde 1.1.0. Se conserva solo por compatibilidad."
     },
     {
       "name": "dl",
       "source": "./plugins/dl",
-      "description": "dl:loop - protocolo de investigacion profunda y comunicacion de decisiones."
+      "description": "dl:loop, decisiones-html (/dl:decisiones) y coordinacion-desarrollo (/dl:subronda). Reemplaza a de-loop."
     }
   ]
 }
