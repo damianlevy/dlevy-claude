@@ -6,7 +6,6 @@ Marketplace de Claude Code con métodos de trabajo para agentes.
 
     claude plugin marketplace add damianlevy/dlevy-claude
     claude plugin install dl@dlevy
-    claude plugin install de-loop@dlevy
 
 ## Plugins
 
@@ -15,12 +14,14 @@ Marketplace de Claude Code con métodos de trabajo para agentes.
 - **`dl:loop`** — protocolo de investigación profunda y comunicación de decisiones. Equipos
   independientes, generación ciega en paralelo, cruce adversarial, pre-registro de falsación,
   instancia arbitral acotada y entrega única para decidir. Se dispara escribiendo `dl:loop`.
-
-### de-loop
-
+- **`decisiones-html`** — el HTML canónico de decisiones (`/dl:decisiones`).
 - **`coordinacion-desarrollo`** — desarrollo con varias sesiones de agentes (hooks D1–D5,
-  `/subronda`).
-- **`decisiones-html`** — el HTML canónico de decisiones (`/decisiones`).
+  `/dl:subronda`).
+
+### de-loop (deprecado)
+
+Desde dl 1.1.0 su contenido vive en `dl`. Se conserva en el repo solo por compatibilidad;
+no hace falta instalarlo.
 
 ## Licencia
 
