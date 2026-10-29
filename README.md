@@ -1,8 +1,16 @@
 # dlevy — marketplace de métodos
 
-Marketplace de Claude Code con métodos de trabajo para agentes.
+Métodos de trabajo para agentes, con marketplace de Claude Code y edición de dl:loop para ChatGPT y Codex.
 
-## Instalación
+## dl:loop para Codex y ChatGPT
+
+La [edición OpenAI 1.0.3](distributions/openai/dl-loop/README.md) incluye instrucciones de instalación en Codex, el protocolo y la adaptación, licencia MIT, privacidad y condiciones de uso. [Descargar ZIP 1.0.3](https://github.com/damianlevy/dlevy-claude/raw/refs/heads/main/distributions/openai/dl-loop-1.0.3.zip).
+
+Para compartirla: https://github.com/damianlevy/dlevy-claude/tree/main/distributions/openai/dl-loop
+
+Esta edición tiene su propio versionado; el plugin de Claude Code se instala con los comandos siguientes.
+
+## Instalación en Claude Code
 
     claude plugin marketplace add damianlevy/dlevy-claude
     claude plugin install dl@dlevy

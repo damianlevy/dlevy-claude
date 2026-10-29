@@ -1,0 +1,4 @@
+interface:
+  display_name: "dl:loop"
+  short_description: "Investigación profunda y decisiones auditables"
+  default_prompt: "Usá $dl-loop para investigar el objetivo de esta sesión."

@@ -1,0 +1,56 @@
+{
+  "name": "dl-loop",
+  "version": "1.0.3",
+  "description": "Evidence-based research and structured decision briefs using the dl:loop method.",
+  "author": {
+    "name": "Damian Levy",
+    "url": "https://github.com/damianlevy"
+  },
+  "homepage": "https://github.com/damianlevy/dlevy-claude/tree/main/distributions/openai/dl-loop",
+  "repository": "https://github.com/damianlevy/dlevy-claude",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "decision-making",
+    "evidence",
+    "multi-agent"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "dl:loop",
+    "shortDescription": "Research and decision briefs",
+    "longDescription": "Investigate complex questions and compare options using Damian Levy's dl:loop method. The workflow scopes the question, tracks evidence and assumptions, records disagreement, and produces a structured decision brief. It supports research, planning, and development across industries, with Spanish source materials and responses in the user's language. A full round uses separate agents only when the host supports them; otherwise it declares a simpler workflow. Interactive HTML, file-based audit trails, and mechanical checks depend on the tools available in the current environment. This instruction-only plugin includes no MCP server, external monitoring, or automatic execution of decisions.",
+    "developerName": "Damian Levy",
+    "category": "Productivity",
+    "capabilities": [
+      "Research planning",
+      "Evidence tracking",
+      "Decision briefs"
+    ],
+    "websiteURL": "https://github.com/damianlevy/dlevy-claude/tree/main/distributions/openai/dl-loop",
+    "supportURL": "https://github.com/damianlevy/dlevy-claude/issues",
+    "defaultPrompt": [
+      "Use dl:loop to compare the options in my project brief.",
+      "Run dl:loop to investigate my question and prepare decisions with evidence.",
+      "Use dl:loop to identify assumptions, disagreements, and next steps."
+    ],
+    "brandColor": "#172B35",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "privacyPolicyURL": "https://github.com/damianlevy/dlevy-claude/blob/main/plugins/dl/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/damianlevy/dlevy-claude/blob/main/plugins/dl/TERMS.md"
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "Publishes terms of use, aligns the public edition version, and restarts each numbered list in the Markdown protocol. The original PDF and core methodology are unchanged. Includes license and policies in the standalone skill.",
+        "translations": {
+          "es-AR": {
+            "subtitle": "Investigación y decisiones",
+            "description": "Investigá preguntas complejas, compará alternativas y recibí decisiones con evidencia, supuestos y disenso. La ronda completa usa subagentes reales cuando están disponibles; en otros entornos declara sus límites y adapta el trabajo. Los archivos, el HTML interactivo y las verificaciones mecánicas dependen de las herramientas del entorno."
+          }
+        }
+      }
+    }
+  }
+}
